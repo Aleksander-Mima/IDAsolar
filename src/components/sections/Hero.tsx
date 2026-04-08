@@ -21,7 +21,7 @@ export default function Hero() {
             <h1 className="font-heading text-[34px] md:text-[40px] font-medium text-white leading-tight tracking-tighter">
               Energia solare
             </h1>
-            <p className="mt-2 text-[16px] font-bold text-white">
+            <p className="mt-1 text-[16px] font-medium text-white">
               progettata per il futuro
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
