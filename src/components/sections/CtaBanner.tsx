@@ -19,13 +19,13 @@ export default function CtaBanner() {
             <div className="flex flex-wrap gap-3">
               <a
                 href="#sistemi"
-                className="bg-white text-ida-dark-bg px-4 py-2 rounded-[3px] text-[12px] font-medium hover:bg-gray-100 transition-colors"
+                className="bg-white text-ida-dark-bg border border-white px-4 py-2 rounded-[3px] text-[12px] font-medium hover:bg-white/90 transition-colors"
               >
                 Scopri i Sistemi
               </a>
               <a
                 href="#contattaci"
-                className="bg-white text-ida-dark-bg px-4 py-2 rounded-[3px] text-[12px] font-medium hover:bg-gray-100 transition-colors"
+                className="bg-white text-ida-dark-bg border border-white px-4 py-2 rounded-[3px] text-[12px] font-medium hover:bg-white/90 transition-colors"
               >
                 Richiedi Consulenza
               </a>

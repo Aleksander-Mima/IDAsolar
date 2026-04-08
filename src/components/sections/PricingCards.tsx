@@ -5,7 +5,7 @@ const plans = [
     icon: "/images/products/ida core.svg",
     badge: "CORE",
     name: "SISTEMA FOTOVOLTAICO STANDARD",
-    price: "6 000",
+    price: "6000",
     features: [
       "Moduli fotovoltaici ad alta efficienza",
       "Inverter integrato",

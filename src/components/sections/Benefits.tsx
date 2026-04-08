@@ -53,9 +53,9 @@ export default function Benefits() {
           {benefits.map((benefit) => (
             <div
               key={benefit.title}
-              className="bg-white rounded-xl p-6 shadow-sm"
+              className="bg-white rounded-xl p-6 shadow-sm text-center"
             >
-              <div className="w-12 h-12 mb-4">
+              <div className="w-12 h-12 mb-4 mx-auto">
                 <Image
                   src={benefit.icon}
                   alt={benefit.title}
@@ -63,7 +63,7 @@ export default function Benefits() {
                   height={48}
                 />
               </div>
-              <h3 className="font-heading font-semibold text-sm text-ida-dark-bg mb-2">
+              <h3 className="font-heading font-semibold text-sm text-ida-dark-bg mb-2 underline decoration-ida-green underline-offset-4">
                 {benefit.title}
               </h3>
               <p className="text-xs text-ida-body leading-relaxed">

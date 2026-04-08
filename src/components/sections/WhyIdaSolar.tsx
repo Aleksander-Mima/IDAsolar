@@ -29,7 +29,7 @@ export default function WhyIdaSolar() {
               </div>
               <div className="absolute bottom-4 left-4">
                 <span className="bg-ida-green text-white text-[10px] font-bold px-3 py-1.5 rounded-sm uppercase">
-                  Trasforma il Sistema
+                  Trasforma e Gestisci
                 </span>
               </div>
             </div>
@@ -66,7 +66,7 @@ export default function WhyIdaSolar() {
                 <li>sistemi di accumulo energetico</li>
                 <li>gestione e monitoraggio del sistema</li>
               </ul>
-              <p className="mt-4 text-sm text-ida-body italic">
+              <p className="mt-4 text-sm text-ida-body">
                 Ogni componente è progettato per lavorare insieme.
               </p>
             </div>

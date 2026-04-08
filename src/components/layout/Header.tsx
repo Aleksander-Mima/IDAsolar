@@ -11,7 +11,7 @@ const navLinks = [
 export default function Header() {
   return (
     <header className="absolute top-0 left-0 right-0 z-50 w-full">
-      <div className="max-w-[1000px] mx-auto pl-4 pr-8 w-full">
+      <div className="max-w-5xl mx-auto px-6 lg:px-12 w-full">
         {/* Top bar */}
         <div className="text-white my-1 text-xs">
           <div className="flex items-center justify-between h-10">

@@ -58,7 +58,7 @@ export default function HowItWorks() {
                     height={36}
                   />
                 </div>
-                <h3 className="font-heading font-semibold text-sm text-ida-dark-bg mb-2">
+                <h3 className="font-heading font-semibold text-sm text-ida-dark-bg mb-2 underline decoration-ida-green underline-offset-4">
                   {step.title}
                 </h3>
                 <p className="text-xs text-ida-body leading-relaxed">
