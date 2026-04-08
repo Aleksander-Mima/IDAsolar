@@ -2,66 +2,49 @@ import Image from "next/image";
 
 const articles = [
   {
-    image: "/images/photos/energia-solare.jpg",
-    title: "Incentivi fotovoltaico: guida completa 2024",
-    excerpt:
-      "Scopri tutti gli incentivi disponibili per l'installazione di impianti fotovoltaici residenziali e commerciali.",
-    category: "Guide",
+    image: "/images/photos/incentivi-fotovoltaico.png",
+    title: "Incentivi fotovoltaico\nItalia 2026",
   },
   {
     image: "/images/photos/impiant.jpg",
-    title: "Come funziona un impianto fotovoltaico",
-    excerpt:
-      "Una guida dettagliata sul funzionamento dei pannelli solari e sulla produzione di energia rinnovabile.",
-    category: "Tecnologia",
+    title: "Come funziona un impianto\nfotovoltaico",
   },
   {
     image: "/images/photos/batteria-solare.jpg",
-    title: "Accumulo energetico: conviene davvero?",
-    excerpt:
-      "Analisi dei vantaggi economici e ambientali dei sistemi di accumulo per impianti fotovoltaici.",
-    category: "Energia",
+    title: "Sistemi di accumulo:\ncome funziona la batteria solare",
   },
 ];
 
 export default function RecentArticles() {
   return (
-    <section className="py-20 lg:py-28 bg-ida-off-white">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="text-center mb-16">
-          <p className="text-sm text-ida-green font-bold uppercase tracking-wider mb-3">
+    <section className="py-16 lg:py-20 bg-white">
+      <div className="max-w-5xl mx-auto px-6 lg:px-12">
+        <div className="text-center mb-12">
+          <p className="text-xs font-bold uppercase tracking-widest text-ida-dark-bg mb-2">
             ARTICOLI RECENTI
           </p>
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-ida-dark">
+          <h2 className="font-heading text-xl md:text-2xl font-medium text-ida-green italic">
             Energia, tecnologia e transizione energetica
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {articles.map((article) => (
             <a
               key={article.title}
               href="#"
-              className="group bg-white rounded-2xl overflow-hidden border border-ida-border hover:shadow-lg transition-shadow"
+              className="group relative aspect-[4/3] rounded-xl overflow-hidden block"
             >
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <Image
-                  src={article.image}
-                  alt={article.title}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <span className="absolute top-4 left-4 bg-ida-green text-white text-xs font-bold px-3 py-1 rounded-full">
-                  {article.category}
-                </span>
-              </div>
-              <div className="p-6">
-                <h3 className="font-heading font-semibold text-ida-dark group-hover:text-ida-green transition-colors leading-snug">
+              <Image
+                src={article.image}
+                alt={article.title}
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+              />
+              <div className="absolute bottom-0 left-0 right-0 p-4">
+                <span className="inline-block bg-ida-green text-white text-[11px] font-medium px-3 py-1.5 rounded-sm leading-tight whitespace-pre-line">
                   {article.title}
-                </h3>
-                <p className="mt-2 text-sm text-ida-body leading-relaxed">
-                  {article.excerpt}
-                </p>
+                </span>
               </div>
             </a>
           ))}

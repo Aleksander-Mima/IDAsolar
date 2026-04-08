@@ -11,7 +11,7 @@ const navLinks = [
 export default function Header() {
   return (
     <header className="absolute top-0 left-0 right-0 z-50 w-full">
-      <div className="max-w-[1000px] mx-auto pl-6 pr-8 w-full">
+      <div className="max-w-[1000px] mx-auto pl-4 pr-8 w-full">
         {/* Top bar */}
         <div className="text-white my-1 text-xs">
           <div className="flex items-center justify-between h-10">
@@ -78,7 +78,7 @@ export default function Header() {
               />
             </Link>
 
-            <div className="hidden md:flex items-center gap-7">
+            <div className="hidden md:flex items-center gap-9">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
@@ -90,7 +90,7 @@ export default function Header() {
               ))}
               <a
                 href="#contattaci"
-                className="bg-ida-green hover:bg-ida-green-dark text-white text-[12px] font-semibold px-4 py-1.5 rounded-[3px] transition-colors"
+                className="bg-ida-green hover:bg-ida-green-dark text-white text-[12px] font-semibold px-4 py-1.5 ml-2 rounded-[3px] transition-colors"
               >
                 Contattaci
               </a>
