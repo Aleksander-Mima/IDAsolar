@@ -2,19 +2,18 @@ import Image from "next/image";
 
 export default function PanelStructure() {
   return (
-    <section className="py-20 lg:py-28 bg-white">
-      <div className="max-w-5xl mx-auto px-6 lg:px-12">
-        <div className="text-center mb-12">
-          <h2 className="font-heading text-3xl md:text-[40px] font-bold text-ida-green leading-tight">
+    <section className="pt-12 lg:pt-16 pb-16 lg:pb-20 bg-white">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12">
+        <div className="text-center mb-14">
+          <h2 className="font-heading text-2xl md:text-[26px] font-medium tracking-tighter text-ida-green-deepest leading-tight">
             Struttura del modulo fotovoltaico
           </h2>
-          <p className="mt-4 text-sm text-ida-body max-w-lg mx-auto leading-relaxed">
-            Ogni modulo è composto da diversi strati progettati per proteggere le
-            celle fotovoltaiche e garantire efficienza, stabilità e durata nel tempo
+          <p className="mt-4 text-[16px] text-ida-dark-bg max-w-[490px] mx-auto text-left leading-[1.1]">
+            Ogni modulo è composto da diversi strati progettati per proteggere le celle fotovoltaiche e garantire efficienza, stabilità e durata nel tempo
           </p>
         </div>
 
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-5xl mx-auto mr-1">
           <Image
             src="/images/photos/modulo-fotovoltaico.png"
             alt="Struttura del modulo fotovoltaico esplosa"

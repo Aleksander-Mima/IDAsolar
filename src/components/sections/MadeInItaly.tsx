@@ -11,12 +11,12 @@ export default function MadeInItaly() {
               MADE IN ITALY
             </h2>
           </div>
-          <div className="pt-1 w-lg">
-            <p className="text-[16px] text-ida-body tracking-tight leading-5">
+          <div className="pt-3 w-lg">
+            <p className="text-[16px] text-ida-body tracking-tight leading-[1.1]">
               I sistemi IDA Solar sono progettati e prodotti in Italia per garantire qualità,
               affidabilità e controllo diretto sulla filiera produttiva.
             </p>
-            <p className="text-[16px] text-ida-body tracking-tight leading-5">
+            <p className="text-[16px] text-ida-body tracking-tight leading-[1.1]">
               L&apos;azienda progetta, produce e integra sistemi energetici completi, operando
               su ogni scala: residenziale, hospitality, industriale e parchi fotovoltaici.
             </p>
