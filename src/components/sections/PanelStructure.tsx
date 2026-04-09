@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function PanelStructure() {
   return (
-    <section className="pt-12 lg:pt-16 pb-16 lg:pb-20 bg-white">
+    <section className="pt-12 lg:pt-16 pb-20 lg:pb-25 bg-white">
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <div className="text-center mb-14">
           <h2 className="font-heading text-2xl md:text-[26px] font-medium tracking-tighter text-ida-green-deepest leading-tight">
