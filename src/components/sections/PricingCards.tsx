@@ -41,13 +41,13 @@ const plans = [
 
 export default function PricingCards() {
   return (
-    <section className="py-20 lg:py-28 bg-[#f5f5f5]">
+    <section className="pt-20 pb-22 lg:pt-19 lg:pb-29 bg-[#f5f5f5]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-20">
-          <h2 className="font-display text-[26px] md:text-[30px] font-[450] text-ida-green-deepest tracking-tighter">
+          <h2 className="font-display text-[21px] md:text-[25px] font-[450] text-ida-green-deepest tracking-tighter">
             Soluzioni fotovoltaiche
           </h2>
-          <p className="mt-3 text-[14px] text-ida-dark-bg max-w-xl mx-auto leading-[1.3] font-[450] tracking-tight">
+          <p className="mt-2 text-[14px] text-ida-dark-bg max-w-xl mx-auto leading-[1.2] font-[450] tracking-tight">
             Energia solare progettata per edifici e infrastrutture. <br />
             Moduli, inverter e accumulo in un unico sistema integrato.
           </p>
@@ -71,16 +71,16 @@ export default function PricingCards() {
               </div>
 
               {/* Product name */}
-              <p className="text-center text-[12px] text-[#000000] uppercase tracking-[0.08em] font-[500] mb-4">
+              <p className="text-center text-[14px] text-[#000000] uppercase tracking-[0.08em] font-[500] mb-4">
                 {plan.name}
               </p>
 
               {/* Price */}
-              <div className="flex items-start justify-center gap-1 mb-8">
-                <span className="font-display text-[48px] leading-none font-[500] text-ida-green tracking-tight">
+              <div className="flex items-baseline justify-center gap-1 mb-8">
+                <span className="font-heading text-[30px] leading-none font-[600] text-[#1aaf6b] tracking-tight">
                   {plan.price}
                 </span>
-                <span className="font-display text-[22px] leading-none text-ida-green mt-2">
+                <span className="font-body text-[30px] leading-none font-[500] text-[#1aaf6b]">
                   &euro;
                 </span>
               </div>
@@ -113,7 +113,7 @@ export default function PricingCards() {
               {/* Button */}
               <a
                 href="#contattaci"
-                className="block w-full text-center bg-ida-green hover:bg-ida-green-dark text-white py-3 rounded-md text-[14px] font-[500] transition-colors"
+                className="block w-1/2 mx-auto text-center bg-ida-green hover:bg-ida-green-dark text-white py-2 rounded-xs text-[14px] font-[500] transition-colors"
               >
                 Scopri di più
               </a>
