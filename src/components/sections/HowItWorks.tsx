@@ -25,43 +25,44 @@ export default function HowItWorks() {
   return (
     <section>
       {/* Background image */}
-      <div className="relative h-[45vh]">
+      <div className="relative h-[69vh]">
         <Image
           src="/images/photos/solar.jpg"
           alt="Pannelli solari"
           fill
-          className="object-cover"
+          className="object-cover object-[center_70%]"
         />
       </div>
 
       {/* Content */}
-      <div className="bg-white py-16 lg:py-20">
-        <div className="max-w-5xl mx-auto px-6 lg:px-12">
-          <div className="text-center mb-12">
-            <h2 className="font-heading text-2xl md:text-3xl font-bold text-ida-dark-bg">
+      <div className="bg-white py-20 lg:py-28">
+        <div className="max-w-6xl mx-auto px-6 lg:px-12">
+          <div className="text-center mb-16">
+            <h2 className="font-display text-[26px] md:text-[30px] font-[450] text-ida-green-deepest tracking-tight">
               Come funziona il sistema IDA Solar
             </h2>
-            <p className="mt-3 text-sm text-ida-body max-w-2xl mx-auto leading-relaxed">
+            <p className="mt-4 text-[15px] text-ida-dark-bg max-w-2xl mx-auto leading-[1.4] font-[450]">
               L&apos;approccio Ida Solar integra progettazione, tecnologia e gestione energetica per
               trasformare edifici e infrastrutture in sistemi di produzione energetica affidabili.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
             {steps.map((step) => (
-              <div key={step.title} className="text-center">
-                <div className="w-16 h-16 mx-auto mb-4 bg-gray-50 rounded-xl flex items-center justify-center">
+              <div key={step.title} className="text-center px-4">
+                <div className="h-24 mx-auto mb-6 flex items-center justify-center">
                   <Image
                     src={step.icon}
                     alt={step.title}
-                    width={36}
-                    height={36}
+                    width={90}
+                    height={90}
+                    className="object-contain"
                   />
                 </div>
-                <h3 className="font-heading font-semibold text-sm text-ida-dark-bg mb-2 underline decoration-ida-green underline-offset-4">
+                <h3 className="font-display font-[450] text-[18px] text-ida-green-deepest mb-3">
                   {step.title}
                 </h3>
-                <p className="text-xs text-ida-body leading-relaxed">
+                <p className="text-[13px] text-ida-dark-bg leading-[1.5] font-[450] max-w-[280px] mx-auto">
                   {step.description}
                 </p>
               </div>

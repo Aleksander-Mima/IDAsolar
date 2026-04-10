@@ -59,7 +59,7 @@ export default function Benefits() {
           {benefits.map((benefit) => (
             <div
               key={benefit.title}
-              className="bg-white rounded-xl px-8 pt-8 pb-6 text-center aspect-square flex flex-col items-center justify-start min-h-[280px]"
+              className="bg-white rounded-xl px-7 pt-8 pb-6 text-center aspect-square flex flex-col items-center justify-start min-h-[270px]"
             >
               <div className="h-20 mb-9 mx-auto flex items-center justify-center">
                 <Image
