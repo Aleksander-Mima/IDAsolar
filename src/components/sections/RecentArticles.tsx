@@ -4,22 +4,28 @@ const articles = [
   {
     image: "/images/photos/incentivi-fotovoltaico.png",
     title: "Incentivi fotovoltaico\nItalia 2026",
+    bgClass: "bg-[#f5f5f5]",
+    imageClass: "object-cover object-bottom",
   },
   {
     image: "/images/photos/impiant.jpg",
     title: "Come funziona un impianto\nfotovoltaico",
+    bgClass: "",
+    imageClass: "object-cover",
   },
   {
     image: "/images/photos/batteria-solare.jpg",
     title: "Sistemi di accumulo:\ncome funziona la batteria solare",
+    bgClass: "bg-[#f5f5f5]",
+    imageClass: "object-cover object-bottom",
   },
 ];
 
 export default function RecentArticles() {
   return (
-    <section className="pt-16 lg:pt-18 pb-16 lg:pb-24 bg-white">
+    <section className="pt-16 lg:pt-18 pb-20 lg:pb-28 bg-white">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-14">
+        <div className="text-center mb-18">
           <p className="text-[25px] font-[500] uppercase tracking-[0.009em] text-ida-dark-bg">
             ARTICOLI RECENTI
           </p>
@@ -33,16 +39,16 @@ export default function RecentArticles() {
             <a
               key={article.title}
               href="#"
-              className="group relative aspect-[4/5] rounded-2xl overflow-hidden block"
+              className={`group relative aspect-[4/5] rounded-xl overflow-hidden block ${article.bgClass}`}
             >
               <Image
                 src={article.image}
                 alt={article.title}
                 fill
-                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                className={`${article.imageClass} group-hover:scale-105 transition-transform duration-500`}
               />
               <div className="absolute bottom-5 left-5 right-5">
-                <span className="inline-block bg-white text-ida-green text-[14px] font-[500] px-5 py-3 rounded-md leading-[1.25] whitespace-pre-line">
+                <span className="block bg-white text-ida-green text-[14px] font-[500] px-5 py-3 rounded-md leading-[1.25] whitespace-pre-line">
                   {article.title}
                 </span>
               </div>
