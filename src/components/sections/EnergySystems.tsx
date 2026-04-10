@@ -22,7 +22,7 @@ export default function EnergySystems() {
   return (
     <section id="sistemi" className="pt-14 pb-16 lg:pt-18 lg:pb-26 3xl:pt-24 3xl:pb-32 4xl:pt-28 4xl:pb-40 bg-ida-light-bg">
       <div className="max-w-5xl 3xl:max-w-[1200px] 4xl:max-w-[1400px] mx-auto ps-4 lg:ps-8 3xl:ps-12 4xl:ps-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 3xl:gap-12 items-start mb-8 3xl:mb-14">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 3xl:gap-12 4xl:gap-14 items-start mb-8 3xl:mb-14 4xl:mb-18">
           <h2 className="font-heading text-[24px] md:text-[26px] 3xl:text-[32px] 4xl:text-[38px] font-bold tracking-widest leading-tight">
             I sistemi energetici
           </h2>
@@ -36,7 +36,7 @@ export default function EnergySystems() {
       </div>
 
       <div className="max-w-7xl 3xl:max-w-[1500px] 4xl:max-w-[1800px] mx-auto px-4 lg:px-8 3xl:px-12 4xl:px-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 3xl:gap-14">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 3xl:gap-14 4xl:gap-16">
           {systems.map((system) => (
             <div key={system.name} className="relative text-left">
               <Image

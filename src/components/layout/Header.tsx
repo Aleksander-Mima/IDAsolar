@@ -11,7 +11,7 @@ const navLinks = [
 export default function Header() {
   return (
     <header className="absolute top-0 left-0 right-0 z-50 w-full">
-      <div className="max-w-5xl 3xl:max-w-[1200px] 4xl:max-w-[1400px] mx-auto px-6 lg:px-12 3xl:px-16 4xl:px-20 w-full">
+      <div className="max-w-5xl 3xl:max-w-[1200px] 4xl:max-w-[1400px] mx-auto px-6 lg:px-10 3xl:px-16 4xl:px-20 w-full">
         {/* Top bar */}
         <div className="text-white my-1 text-xs 3xl:text-[14px] 4xl:text-[15px]">
           <div className="flex items-center justify-between h-10 3xl:h-12 4xl:h-14">
@@ -78,7 +78,7 @@ export default function Header() {
               />
             </Link>
 
-            <div className="hidden md:flex items-center gap-9 3xl:gap-12 4xl:gap-14">
+            <div className="hidden md:flex items-center gap-7 3xl:gap-12 4xl:gap-14">
               {navLinks.map((link) => (
                 <a
                   key={link.href}

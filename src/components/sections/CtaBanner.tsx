@@ -11,12 +11,12 @@ export default function CtaBanner() {
                   Trasforma il tuo edificio in una<br />
                   fonte di energia
                 </h2>
-                <p className="mt-3 3xl:mt-4 text-[15px] 3xl:text-[18px] 4xl:text-[20px] text-white font-[450] leading-[1.3]">
+                <p className="mt-3 3xl:mt-4 4xl:mt-5 text-[15px] 3xl:text-[18px] 4xl:text-[20px] text-white font-[450] leading-[1.3]">
                   I sistemi IDA Solar trasformano la luce del sole in energia <br />
                   affidabile per edifici, aziende e infrastrutture.
                 </p>
               </div>
-              <div className="flex flex-wrap gap-4 3xl:gap-5">
+              <div className="flex flex-wrap gap-4 3xl:gap-5 4xl:gap-6">
                 <a
                   href="#sistemi"
                   className="bg-white text-ida-dark-bg px-4 py-2 3xl:px-5 3xl:py-2.5 4xl:px-6 4xl:py-3 text-[12px] 3xl:text-[14px] 4xl:text-[16px] font-[500] hover:bg-white/90 transition-colors"

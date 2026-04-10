@@ -47,13 +47,13 @@ export default function PricingCards() {
           <h2 className="font-display text-[21px] md:text-[25px] 3xl:text-[32px] 4xl:text-[38px] font-[450] text-ida-green-deepest tracking-tighter">
             Soluzioni fotovoltaiche
           </h2>
-          <p className="mt-2 3xl:mt-4 text-[14px] 3xl:text-[17px] 4xl:text-[19px] text-ida-dark-bg max-w-xl 3xl:max-w-2xl 4xl:max-w-3xl mx-auto leading-[1.2] font-[450] tracking-tight">
+          <p className="mt-2 3xl:mt-4 4xl:mt-5 text-[14px] 3xl:text-[17px] 4xl:text-[19px] text-ida-dark-bg max-w-xl 3xl:max-w-2xl 4xl:max-w-3xl mx-auto leading-[1.2] font-[450] tracking-tight">
             Energia solare progettata per edifici e infrastrutture. <br />
             Moduli, inverter e accumulo in un unico sistema integrato.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 3xl:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 3xl:gap-10 4xl:gap-12">
           {plans.map((plan) => (
             <div
               key={plan.badge}
@@ -71,7 +71,7 @@ export default function PricingCards() {
               </div>
 
               {/* Product name */}
-              <p className="text-center text-[14px] 3xl:text-[16px] 4xl:text-[18px] text-[#000000] uppercase tracking-[0.08em] font-[500] mb-4 3xl:mb-5">
+              <p className="text-center text-[14px] 3xl:text-[16px] 4xl:text-[18px] text-[#000000] uppercase tracking-[0.08em] font-[500] mb-4 3xl:mb-5 4xl:mb-6">
                 {plan.name}
               </p>
 
@@ -86,11 +86,11 @@ export default function PricingCards() {
               </div>
 
               {/* Features */}
-              <ul className="space-y-3 3xl:space-y-4 mb-9 3xl:mb-11 4xl:mb-13 flex-1">
+              <ul className="space-y-3 3xl:space-y-4 4xl:space-y-5 mb-9 3xl:mb-11 4xl:mb-13 flex-1">
                 {plan.features.map((feature) => (
                   <li
                     key={feature}
-                    className="flex items-center gap-3 3xl:gap-4 text-[13px] 3xl:text-[15px] 4xl:text-[17px] text-ida-dark-bg font-[450]"
+                    className="flex items-center gap-3 3xl:gap-4 4xl:gap-5 text-[13px] 3xl:text-[15px] 4xl:text-[17px] text-ida-dark-bg font-[450]"
                   >
                     <span className="w-4 h-4 3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6 rounded-full bg-ida-green flex items-center justify-center shrink-0">
                       <svg

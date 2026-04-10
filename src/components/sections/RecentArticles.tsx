@@ -29,12 +29,12 @@ export default function RecentArticles() {
           <p className="text-[25px] 3xl:text-[30px] 4xl:text-[34px] font-[500] uppercase tracking-[0.009em] text-ida-dark-bg">
             ARTICOLI RECENTI
           </p>
-          <h2 className="font-display text-[18px] md:text-[26px] 3xl:text-[32px] 4xl:text-[36px] font-[500] text-ida-green tracking-tighter">
+          <h2 className="font-display text-[18px] md:text-[26px] 3xl:text-[32px] 4xl:text-[38px] font-[500] text-ida-green tracking-tighter">
             Energia, tecnologia e transizione energetica
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 3xl:gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 3xl:gap-10 4xl:gap-12">
           {articles.map((article) => (
             <a
               key={article.title}
