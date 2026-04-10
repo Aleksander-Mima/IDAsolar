@@ -22,6 +22,10 @@
   --font-heading: "Alcyone", sans-serif;
   --font-body: "Parabolica", sans-serif;
   --font-display: "Parabolica Display", sans-serif;
+
+  /* Custom breakpoints for large desktops */
+  --breakpoint-3xl: 1700px; /* targets 1920x1080 */
+  --breakpoint-4xl: 2400px; /* targets 2560x1080 */
 }
 
 @font-face {

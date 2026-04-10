@@ -33,19 +33,19 @@ const benefits = [
 
 export default function Benefits() {
   return (
-    <section className="pt-18 pb-18 lg:pt-24 lg:pb-24 bg-[#f5f5f5]">
-      <div className="max-w-6xl mx-auto ps-6 lg:ps-18 mb-26">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+    <section className="pt-18 pb-18 lg:pt-24 lg:pb-24 3xl:pt-32 3xl:pb-32 4xl:pt-40 4xl:pb-40 bg-[#f5f5f5]">
+      <div className="max-w-6xl 3xl:max-w-[1380px] 4xl:max-w-[1600px] mx-auto ps-6 lg:ps-18 3xl:ps-24 4xl:ps-28 mb-26 3xl:mb-32">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 3xl:gap-12 items-start">
           <div>
-            <p className="text-[20px] text-ida-green font-[450] uppercase tracking-tighter mb-3">
+            <p className="text-[20px] 3xl:text-[24px] 4xl:text-[28px] text-ida-green font-[450] uppercase tracking-tighter mb-3 3xl:mb-4">
               ENERGIA SOLARE
             </p>
-            <h2 className="font-display text-[24px] md:text-[26px] tracking-tighter font-[450] text-#06413e leading-[1.1]">
+            <h2 className="font-display text-[24px] md:text-[26px] 3xl:text-[32px] 4xl:text-[38px] tracking-tighter font-[450] text-#06413e leading-[1.1]">
               Risparmiare energia<br />
               Produrre valore
             </h2>
           </div>
-          <p className="text-[16px] text-[#888888] font-semibold leading-[1.3] tracking-tight pt-2">
+          <p className="text-[16px] 3xl:text-[19px] 4xl:text-[21px] text-[#888888] font-semibold leading-[1.3] tracking-tight pt-2">
             I sistemi fotovoltaici IDA Solar trasformano il tuo tetto in una fonte di
             energia pulita e controllata.Produzione solare, accumulo energetico <br />
             e gestione intelligente lavorano insieme per ridurre i costi energetici <br />
@@ -54,26 +54,26 @@ export default function Benefits() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className="max-w-7xl 3xl:max-w-[1500px] 4xl:max-w-[1800px] mx-auto px-6 lg:px-12 3xl:px-16 4xl:px-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 3xl:gap-8">
           {benefits.map((benefit) => (
             <div
               key={benefit.title}
-              className="bg-white rounded-xl px-7 pt-8 pb-6 text-center aspect-square flex flex-col items-center justify-start min-h-[270px]"
+              className="bg-white rounded-xl px-7 pt-8 pb-6 3xl:px-9 3xl:pt-10 3xl:pb-8 4xl:px-11 4xl:pt-12 4xl:pb-10 text-center aspect-square flex flex-col items-center justify-start min-h-[270px] 3xl:min-h-[320px] 4xl:min-h-[370px]"
             >
-              <div className="h-20 mb-9 mx-auto flex items-center justify-center">
+              <div className="h-20 3xl:h-24 4xl:h-28 mb-9 3xl:mb-11 4xl:mb-12 mx-auto flex items-center justify-center">
                 <Image
                   src={benefit.icon}
                   alt={benefit.title}
                   width={80}
                   height={80}
-                  className={`${benefit.iconClass} object-contain`}
+                  className={`${benefit.iconClass} 3xl:scale-125 4xl:scale-[1.4] object-contain`}
                 />
               </div>
-              <h3 className="font-heading font-[450] text-[15px] text-ida-dark-bg mb-3">
+              <h3 className="font-heading font-[450] text-[15px] 3xl:text-[18px] 4xl:text-[20px] text-ida-dark-bg mb-3 3xl:mb-4">
                 {benefit.title}
               </h3>
-              <p className="text-[12px] text-[#888888] font-[550] leading-[1.2]">
+              <p className="text-[12px] 3xl:text-[14px] 4xl:text-[16px] text-[#888888] font-[550] leading-[1.2]">
                 {benefit.description}
               </p>
             </div>
