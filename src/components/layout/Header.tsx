@@ -11,11 +11,11 @@ const navLinks = [
 export default function Header() {
   return (
     <header className="absolute top-0 left-0 right-0 z-50 w-full">
-      <div className="max-w-5xl mx-auto px-6 lg:px-12 w-full">
+      <div className="max-w-5xl 3xl:max-w-[1200px] 4xl:max-w-[1400px] mx-auto px-6 lg:px-10 3xl:px-16 4xl:px-20 w-full">
         {/* Top bar */}
-        <div className="text-white my-1 text-xs">
-          <div className="flex items-center justify-between h-10">
-            <div className="flex items-center gap-6">
+        <div className="text-white my-1 text-xs 3xl:text-[14px] 4xl:text-[15px]">
+          <div className="flex items-center justify-between h-10 3xl:h-12 4xl:h-14">
+            <div className="flex items-center gap-6 3xl:gap-8 4xl:gap-10">
               <a
                 href="tel:+390280794991"
                 className="flex items-center gap-1.5 text-white font-medium hover:text-ida-body-light transition-colors"
@@ -67,7 +67,7 @@ export default function Header() {
 
         {/* Navigation — contained white card */}
         <nav>
-          <div className="bg-white rounded-[3px] flex items-center justify-between h-[60px] px-5">
+          <div className="bg-white rounded-[3px] flex items-center justify-between h-[60px] 3xl:h-[72px] 4xl:h-[80px] px-5 3xl:px-7 4xl:px-8">
             <Link href="/" className="flex-shrink-0">
               <Image
                 src="/images/logo/ida solar logo.svg"
@@ -78,19 +78,19 @@ export default function Header() {
               />
             </Link>
 
-            <div className="hidden md:flex items-center gap-9">
+            <div className="hidden md:flex items-center gap-7 3xl:gap-12 4xl:gap-14">
               {navLinks.map((link) => (
                 <a
                   key={link.href}
                   href={link.href}
-                  className="text-[12px] text-ida-dark-bg font-medium hover:text-ida-green transition-colors"
+                  className="text-[12px] 3xl:text-[14px] 4xl:text-[16px] text-ida-dark-bg font-medium hover:text-ida-green transition-colors"
                 >
                   {link.label}
                 </a>
               ))}
               <a
                 href="#contattaci"
-                className="bg-ida-green hover:bg-ida-green-dark text-white text-[12px] font-semibold px-4 py-1.5 ml-2 rounded-[3px] transition-colors"
+                className="bg-ida-green hover:bg-ida-green-dark text-white text-[12px] 3xl:text-[14px] 4xl:text-[16px] font-semibold px-4 py-1.5 3xl:px-5 3xl:py-2 4xl:px-6 4xl:py-2.5 ml-2 rounded-[3px] transition-colors"
               >
                 Contattaci
               </a>
