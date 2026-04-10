@@ -21,6 +21,7 @@
 
   --font-heading: "Alcyone", sans-serif;
   --font-body: "Parabolica", sans-serif;
+  --font-display: "Parabolica Display", sans-serif;
 }
 
 @font-face {
@@ -62,24 +63,49 @@
 
 @font-face {
   font-family: "Parabolica";
-  src: url("/fonts/ParabolicaTest-Regular.otf") format("opentype");
+  src: url("/fonts/ParabolicaTextTest-Regular.otf") format("opentype");
   font-weight: 400;
   font-display: swap;
 }
 @font-face {
   font-family: "Parabolica";
-  src: url("/fonts/ParabolicaTest-Medium.otf") format("opentype");
+  src: url("/fonts/ParabolicaTextTest-Medium.otf") format("opentype");
   font-weight: 500;
   font-display: swap;
 }
 @font-face {
   font-family: "Parabolica";
-  src: url("/fonts/ParabolicaTest-Bold.otf") format("opentype");
+  src: url("/fonts/ParabolicaTextTest-Bold.otf") format("opentype");
   font-weight: 700;
   font-display: swap;
 }
 @font-face {
   font-family: "Parabolica";
+  src: url("/fonts/ParabolicaTextTest-Black.otf") format("opentype");
+  font-weight: 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Parabolica Display";
+  src: url("/fonts/ParabolicaTest-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Parabolica Display";
+  src: url("/fonts/ParabolicaTest-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Parabolica Display";
+  src: url("/fonts/ParabolicaTest-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Parabolica Display";
   src: url("/fonts/ParabolicaTest-Black.otf") format("opentype");
   font-weight: 900;
   font-display: swap;
