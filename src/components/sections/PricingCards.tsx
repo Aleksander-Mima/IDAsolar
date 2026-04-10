@@ -17,7 +17,7 @@ const plans = [
     icon: "/images/products/ida power.svg",
     badge: "POWER",
     name: "SISTEMA FOTOVOLTAICO PREMIUM",
-    price: "8 000",
+    price: "8000",
     features: [
       "Moduli premium black",
       "Maggiore produzione energetica",
@@ -41,79 +41,79 @@ const plans = [
 
 export default function PricingCards() {
   return (
-    <section className="py-16 lg:py-20 bg-gray-50">
-      <div className="max-w-5xl mx-auto px-6 lg:px-12">
-        <div className="text-center mb-12">
-          <h2 className="font-heading text-2xl md:text-3xl font-bold text-ida-dark-bg">
+    <section className="py-20 lg:py-28 bg-[#f5f5f5]">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-20">
+          <h2 className="font-display text-[26px] md:text-[30px] font-[450] text-ida-green-deepest tracking-tighter">
             Soluzioni fotovoltaiche
           </h2>
-          <p className="mt-3 text-sm text-ida-body max-w-xl mx-auto leading-relaxed">
-            Energia solare progettata per edifici e infrastrutture.
+          <p className="mt-3 text-[14px] text-ida-dark-bg max-w-xl mx-auto leading-[1.3] font-[450] tracking-tight">
+            Energia solare progettata per edifici e infrastrutture. <br />
             Moduli, inverter e accumulo in un unico sistema integrato.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {plans.map((plan) => (
             <div
               key={plan.badge}
-              className="bg-white rounded-xl p-6 shadow-sm"
+              className="bg-white rounded-lg px-8 pt-4 pb-9 flex flex-col"
             >
-              <div className="flex items-center gap-2 mb-4">
-                <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center">
-                  <Image
-                    src={plan.icon}
-                    alt={plan.badge}
-                    width={24}
-                    height={24}
-                  />
-                </div>
-                <span className="font-heading font-bold text-sm text-ida-dark-bg">
-                  {plan.badge}
-                </span>
-                <span className="w-5 h-5 rounded-full bg-ida-green text-white text-xs flex items-center justify-center font-bold">
-                  +
-                </span>
+              {/* Badge pill */}
+              <div className="flex items-center justify-center rounded-full mb-8">
+                <Image
+                  src={plan.icon}
+                  alt={plan.badge}
+                  width={200}
+                  height={200}
+                  className="object-contain shrink-0"
+                />
               </div>
 
-              <p className="text-[10px] text-ida-body uppercase tracking-wider font-medium mb-3">
+              {/* Product name */}
+              <p className="text-center text-[12px] text-[#000000] uppercase tracking-[0.08em] font-[500] mb-4">
                 {plan.name}
               </p>
 
-              <div className="flex items-baseline gap-1 mb-5">
-                <span className="font-heading text-3xl font-black text-ida-green">
+              {/* Price */}
+              <div className="flex items-start justify-center gap-1 mb-8">
+                <span className="font-display text-[48px] leading-none font-[500] text-ida-green tracking-tight">
                   {plan.price}
                 </span>
-                <span className="text-lg text-ida-green">&euro;</span>
+                <span className="font-display text-[22px] leading-none text-ida-green mt-2">
+                  &euro;
+                </span>
               </div>
 
-              <ul className="space-y-2.5 mb-6">
+              {/* Features */}
+              <ul className="space-y-3 mb-9 flex-1">
                 {plan.features.map((feature) => (
                   <li
                     key={feature}
-                    className="flex items-start gap-2 text-xs text-ida-body"
+                    className="flex items-center gap-3 text-[13px] text-ida-dark-bg font-[450]"
                   >
-                    <svg
-                      className="w-4 h-4 text-ida-green flex-shrink-0 mt-0.5"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
+                    <span className="w-4 h-4 rounded-full bg-ida-green flex items-center justify-center shrink-0">
+                      <svg
+                        className="w-2.5 h-2.5 text-white"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="3.5"
                         strokeLinecap="round"
                         strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M5 13l4 4L19 7"
-                      />
-                    </svg>
+                      >
+                        <path d="M5 13l4 4L19 7" />
+                      </svg>
+                    </span>
                     {feature}
                   </li>
                 ))}
               </ul>
 
+              {/* Button */}
               <a
                 href="#contattaci"
-                className="block w-full text-center bg-ida-green hover:bg-ida-green-dark text-white py-2.5 rounded-lg text-xs font-bold transition-colors"
+                className="block w-full text-center bg-ida-green hover:bg-ida-green-dark text-white py-3 rounded-md text-[14px] font-[500] transition-colors"
               >
                 Scopri di più
               </a>
