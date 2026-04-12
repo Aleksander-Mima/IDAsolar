@@ -31,7 +31,7 @@ export default function Footer() {
       <div className="relative">
         {/* Contact bar */}
         <div>
-          <div className="max-w-6xl 3xl:max-w-[1380px] 4xl:max-w-[1600px] mx-auto ps-6 lg:ps-12 lg:pe-14 3xl:ps-16 3xl:pe-20 4xl:ps-20 4xl:pe-24 py-10 3xl:py-14 4xl:py-16">
+          <div className="max-w-6xl 3xl:max-w-[1380px] 4xl:max-w-[1600px] mx-auto ps-6 pe-6 lg:ps-12 lg:pe-14 3xl:ps-16 3xl:pe-20 4xl:ps-20 4xl:pe-24 py-10 3xl:py-14 4xl:py-16">
             <div className="flex flex-col md:flex-row md:justify-between gap-6 3xl:gap-8 4xl:gap-10">
               <div>
                 <p className="text-white text-[13px] 3xl:text-[15px] 4xl:text-[17px] font-[400] mb-1 3xl:mb-1.5 4xl:mb-2">Supporto</p>
@@ -66,10 +66,7 @@ export default function Footer() {
                   className="3xl:w-[240px] 3xl:h-auto 4xl:w-[280px] 4xl:h-auto"
                 />
                 <p className="mt-6 3xl:mt-8 4xl:mt-10 text-[11px] 3xl:text-[13px] 4xl:text-[15px] text-white leading-[1.1] max-w-xs 3xl:max-w-sm 4xl:max-w-md font-[500] text-justify">
-                  IDA Solar è un produttore italiano di sistemi <br />
-                  fotovoltaici che sviluppa moduli, inverter e <br />
-                  sistemi di accumulo per edifici, aziende e <br />
-                  infrastrutture energetiche.
+                  IDA Solar è un produttore italiano di sistemi fotovoltaici che sviluppa moduli, inverter e sistemi di accumulo per edifici, aziende e infrastrutture energetiche.
                 </p>
                 <div className="flex gap-4 3xl:gap-5 4xl:gap-6 mt-6 3xl:mt-8 4xl:mt-10">
                   <a href="#" aria-label="Facebook" className="text-white hover:text-white/70 transition-colors">
@@ -88,10 +85,10 @@ export default function Footer() {
               {/* Link columns */}
               {footerColumns.map((col) => (
                 <div key={col.title}>
-                  <h4 className="font-heading font-[600] text-[15px] 3xl:text-[18px] 4xl:text-[20px] text-white mb-6 3xl:mb-8 4xl:mb-10">
+                  <h4 className="font-heading font-[600] text-[18px] 3xl:text-[18px] 4xl:text-[20px] text-white mb-6 3xl:mb-8 4xl:mb-10">
                     {col.title}
                   </h4>
-                  <ul className="space-y-4 3xl:space-y-5 4xl:space-y-6">
+                  <ul className="space-y-2">
                     {col.links.map((label) => (
                       <li key={label}>
                         <a
@@ -108,7 +105,7 @@ export default function Footer() {
             </div>
 
             {/* Bottom */}
-            <div className="mt-14 3xl:mt-20 4xl:mt-24 text-center text-[12px] 3xl:text-[14px] 4xl:text-[16px] text-white font-[400]">
+            <div className="mt-12 lg:mt-20 3xl:mt-20 4xl:mt-24 text-center text-[12px] 3xl:text-[14px] 4xl:text-[16px] text-white font-[400]">
               Copyright &copy; 2026 IDA Solar &middot; Tutti i diritti riservati
             </div>
           </div>

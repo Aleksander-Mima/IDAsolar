@@ -113,7 +113,7 @@ export default function PricingCards() {
               {/* Button */}
               <a
                 href="#contattaci"
-                className="block w-1/2 mx-auto text-center bg-ida-green hover:bg-ida-green-dark text-white py-2 3xl:py-2.5 4xl:py-3 rounded-xs text-[14px] 3xl:text-[16px] 4xl:text-[18px] font-[500] transition-colors"
+                className="block w-2/3 sm:w-1/2 mx-auto text-center bg-ida-green hover:bg-ida-green-dark text-white py-2 3xl:py-2.5 4xl:py-3 rounded-xs text-[14px] 3xl:text-[16px] 4xl:text-[18px] font-[500] transition-colors"
               >
                 Scopri di più
               </a>
