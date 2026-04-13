@@ -20,7 +20,7 @@ const systems = [
 
 export default function EnergySystems() {
   return (
-    <section id="sistemi" className="pt-14 pb-16 lg:pt-18 lg:pb-26 3xl:pt-24 3xl:pb-32 4xl:pt-28 4xl:pb-40 bg-ida-light-bg">
+    <section id="sistemi" className="pt-14 pb-12 lg:pt-18 lg:pb-20 3xl:pt-24 3xl:pb-28 4xl:pt-28 4xl:pb-36 bg-ida-light-bg">
       <div className="max-w-[1110px] 3xl:max-w-[1200px] 4xl:max-w-[1400px] mx-auto px-4 lg:ps-8 lg:pe-0 3xl:ps-12 4xl:ps-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-8 3xl:gap-12 4xl:gap-14 items-start mb-8 3xl:mb-14 4xl:mb-18">
           <h2 className="font-heading text-[24px] md:text-[26px] 3xl:text-[32px] 4xl:text-[38px] font-bold tracking-widest leading-tight">
@@ -58,6 +58,13 @@ export default function EnergySystems() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Pagination dots */}
+        <div className="flex items-center justify-center gap-3 mt-14 3xl:mt-18 4xl:mt-22">
+          <span className="w-4 h-4 3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6 rounded-full bg-ida-green shadow-[0_2px_6px_rgba(91,193,98,0.4)]" />
+          <span className="w-4 h-4 3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6 rounded-full bg-white shadow-[0_3px_8px_rgba(0,0,0,0.25)]" />
+          <span className="w-4 h-4 3xl:w-5 3xl:h-5 4xl:w-6 4xl:h-6 rounded-full bg-white shadow-[0_3px_8px_rgba(0,0,0,0.25)]" />
         </div>
       </div>
     </section>
