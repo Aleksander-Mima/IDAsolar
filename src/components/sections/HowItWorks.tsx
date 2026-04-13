@@ -42,8 +42,7 @@ export default function HowItWorks() {
               Come funziona il sistema IDA Solar
             </h2>
             <p className="mt-2 3xl:mt-4 4xl:mt-5 text-[14px] 3xl:text-[17px] 4xl:text-[19px] text-ida-dark-bg max-w-2xl 3xl:max-w-3xl 4xl:max-w-4xl mx-auto leading-[1.2] font-[450] tracking-tight">
-              L&apos;approccio Ida Solar integra progettazione, tecnologia e gestione energetica per <br />
-              trasformare edifici e infrastrutture in sistemi di produzione energetica affidabili.
+              L&apos;approccio Ida Solar integra progettazione, tecnologia e gestione energetica per trasformare edifici e infrastrutture in sistemi di produzione energetica affidabili.
             </p>
           </div>
 

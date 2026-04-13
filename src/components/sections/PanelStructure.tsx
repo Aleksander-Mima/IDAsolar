@@ -8,8 +8,8 @@ export default function PanelStructure() {
           <h2 className="font-heading text-2xl md:text-[26px] 3xl:text-[32px] 4xl:text-[38px] font-medium tracking-tighter text-ida-green-deepest leading-tight">
             Struttura del modulo fotovoltaico
           </h2>
-          <p className="mt-4 3xl:mt-6 4xl:mt-8 text-[16px] 3xl:text-[19px] 4xl:text-[21px] text-ida-dark-bg max-w-[490px] 3xl:max-w-[600px] 4xl:max-w-[680px] mx-auto text-left leading-[1.1]">
-            Ogni modulo è composto da diversi strati progettati per proteggere le celle fotovoltaiche e garantire efficienza, stabilità e durata nel tempo
+          <p className="mt-4 3xl:mt-6 4xl:mt-8 text-[16px] 3xl:text-[19px] 4xl:text-[21px] text-ida-dark-bg max-w-[540px] 3xl:max-w-[650px] 4xl:max-w-[730px] mx-auto text-center leading-[1.1]">
+            Ogni modulo è composto da diversi strati progettati per proteggere <br /> le celle fotovoltaiche e garantire efficienza, stabilità e durata nel tempo
           </p>
         </div>
 

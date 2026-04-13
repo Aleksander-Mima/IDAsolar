@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 const navLinks = [
   { label: "Moduli Fotovoltaici", href: "#moduli" },
@@ -9,13 +12,17 @@ const navLinks = [
 ];
 
 export default function Header() {
+  const [mobileOpen, setMobileOpen] = useState(false);
+
+  const closeMobile = () => setMobileOpen(false);
+
   return (
     <header className="absolute top-0 left-0 right-0 z-50 w-full">
-      <div className="max-w-5xl 3xl:max-w-[1200px] 4xl:max-w-[1400px] mx-auto px-6 lg:px-10 3xl:px-16 4xl:px-20 w-full">
+      <div className="max-w-5xl 3xl:max-w-[1200px] 4xl:max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-10 3xl:px-16 4xl:px-20 w-full">
         {/* Top bar */}
-        <div className="text-white my-1 text-xs 3xl:text-[14px] 4xl:text-[15px]">
+        <div className="text-white my-1 text-[11px] sm:text-xs 3xl:text-[14px] 4xl:text-[15px]">
           <div className="flex items-center justify-between h-10 3xl:h-12 4xl:h-14">
-            <div className="flex items-center gap-6 3xl:gap-8 4xl:gap-10">
+            <div className="flex items-center gap-3 sm:gap-6 3xl:gap-8 4xl:gap-10">
               <a
                 href="tel:+390280794991"
                 className="flex items-center gap-1.5 text-white font-medium hover:text-ida-body-light transition-colors"
@@ -32,7 +39,7 @@ export default function Header() {
               </a>
               <a
                 href="mailto:info@idasolar.it"
-                className="flex items-center gap-1.5 text-white font-medium hover:text-ida-body-light transition-colors"
+                className="hidden sm:flex items-center gap-1.5 text-white font-medium hover:text-ida-body-light transition-colors"
               >
                 <svg
                   className="w-4 h-4 text-ida-green"
@@ -50,7 +57,7 @@ export default function Header() {
                 info@idasolar.it
               </a>
             </div>
-            <div className="flex items-center gap-3">
+            <div className="hidden sm:flex items-center gap-3">
               <a href="#" aria-label="Facebook" className="text-ida-green hover:text-ida-green-dark transition-colors">
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
@@ -66,15 +73,16 @@ export default function Header() {
         </div>
 
         {/* Navigation — contained white card */}
-        <nav>
-          <div className="bg-white rounded-[3px] flex items-center justify-between h-[60px] 3xl:h-[72px] 4xl:h-[80px] px-5 3xl:px-7 4xl:px-8">
-            <Link href="/" className="flex-shrink-0">
+        <nav className="relative">
+          <div className="bg-white rounded-[3px] flex items-center justify-between h-[60px] 3xl:h-[72px] 4xl:h-[80px] px-4 sm:px-5 3xl:px-7 4xl:px-8">
+            <Link href="/" className="flex-shrink-0 min-w-0" onClick={closeMobile}>
               <Image
                 src="/images/logo/ida solar logo.svg"
                 alt="IDA Solar"
                 width={170}
                 height={27}
                 priority
+                className="w-[130px] sm:w-[150px] md:w-[170px] h-auto"
               />
             </Link>
 
@@ -91,6 +99,56 @@ export default function Header() {
               <a
                 href="#contattaci"
                 className="bg-ida-green hover:bg-ida-green-dark text-white text-[12px] 3xl:text-[14px] 4xl:text-[16px] font-semibold px-4 py-1.5 3xl:px-5 3xl:py-2 4xl:px-6 4xl:py-2.5 ml-2 rounded-[3px] transition-colors"
+              >
+                Contattaci
+              </a>
+            </div>
+
+            {/* Mobile hamburger button */}
+            <button
+              type="button"
+              aria-label={mobileOpen ? "Chiudi menu" : "Apri menu"}
+              aria-expanded={mobileOpen}
+              aria-controls="mobile-nav"
+              onClick={() => setMobileOpen((v) => !v)}
+              className="md:hidden inline-flex items-center justify-center w-11 h-11 -mr-2 rounded-[3px] text-ida-dark-bg hover:text-ida-green hover:bg-ida-green-pale/40 transition-colors"
+            >
+              {mobileOpen ? (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 6l12 12M18 6L6 18" />
+                </svg>
+              ) : (
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7h16M4 12h16M4 17h16" />
+                </svg>
+              )}
+            </button>
+          </div>
+
+          {/* Mobile dropdown panel */}
+          <div
+            id="mobile-nav"
+            className={`md:hidden absolute left-0 right-0 top-[calc(100%+8px)] origin-top transition-all duration-200 ease-out ${
+              mobileOpen
+                ? "opacity-100 scale-y-100 pointer-events-auto"
+                : "opacity-0 scale-y-95 pointer-events-none"
+            }`}
+          >
+            <div className="bg-white rounded-[3px] shadow-lg p-4 flex flex-col gap-1">
+              {navLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  onClick={closeMobile}
+                  className="text-[14px] text-ida-dark-bg font-medium px-3 py-3 rounded-[3px] hover:text-ida-green hover:bg-ida-green-pale/40 transition-colors"
+                >
+                  {link.label}
+                </a>
+              ))}
+              <a
+                href="#contattaci"
+                onClick={closeMobile}
+                className="mt-2 bg-ida-green hover:bg-ida-green-dark text-white text-[14px] font-semibold text-center px-4 py-3 rounded-[3px] transition-colors"
               >
                 Contattaci
               </a>
